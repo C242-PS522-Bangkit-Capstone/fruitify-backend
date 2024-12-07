@@ -47,7 +47,7 @@
 - URL : /profile/:id
 - Method : DELETE
 - Request Body :
-  - id as string
+  - id as integer
 - Response
 {
     "error" : false,
