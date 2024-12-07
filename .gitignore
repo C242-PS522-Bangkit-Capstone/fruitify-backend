@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# File environment
+.env
+
+# File konfigurasi npm
+package-lock.json
+
+
+cloud/storage/service-account.json
