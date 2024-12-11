@@ -22,7 +22,7 @@ router.post('/', createData);
 const storage = multer.diskStorage({
   destination: (req, file, cb)=>{
    
-    cb(null, 'D:\\Jeremia Sibarani\\jnhelp\\frutify_backend\\uploads')
+    cb(null, '../uploads')
   },
   filename: (req, file, cb)=>{
     cb(null, file.originalname)
