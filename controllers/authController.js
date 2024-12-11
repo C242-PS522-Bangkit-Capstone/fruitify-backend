@@ -49,8 +49,17 @@ exports.loginUser = (req, res) => {
         return res.status(401).send({ message: 'Invalid credentials' });
       }
 
+      // Create a token using the required user data
       const token = createToken(user);
-      res.send({ message: 'Login successful', token });
+
+      // Send a response with name, email, gender, and token
+      res.send({
+        message: 'Login successful',
+        name: user.name,
+        email: user.email,
+        gender: user.gender,
+        token
+      });
     });
   });
 };
