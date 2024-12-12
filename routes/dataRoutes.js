@@ -11,7 +11,7 @@ router.get('/getAllData', getAllData);
 router.post('/', createData);
 
 const upload = multer({
-  dest: 'uploads/'
+  dest: '../uploads/'
 })
 
 router.post('/upload', upload.single('file'), saveFile)
